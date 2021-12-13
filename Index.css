@@ -1,0 +1,116 @@
+.wrapper{
+	display: grid;
+	grid-template-columns: 1fr 3fr 1fr;	/* crée 3 colonnes */
+	grid-auto-rows: minmax(50px, auto);	/* crée des lignes de 50px min. de haut */
+	grid-column-gap: 10px;
+	grid-row-gap: 10px;
+	grid-template-areas:
+	"hd hd hd"
+	"na na na "
+	"sec sec sec "
+	"sec sec sec "
+	"ft  ft  ft" ;
+}
+section .profil img{
+    width: 90px;
+    height: 160px;
+    border-radius: 40px;
+
+}
+
+section .cuisine img{
+    width: 300px;
+
+}
+section .reseau img{
+    width: 300px;
+
+}
+
+@media screen and (max-width: 500px){.wrapper{
+	display: grid;
+	grid-auto-rows: minmax(50px, auto);	/* crée des lignes de 50px min. de haut */
+	grid-column-gap: 5px;
+	grid-row-gap: 5px;
+	grid-template-areas:
+	"hd"
+	"na"
+	"sec"
+	"ft" ;
+}
+}
+section h2{
+	font-family:Times;
+	color:blue;
+}
+header h1{
+	color:white;
+}
+
+footer{
+	grid-area: ft;
+	color : white;
+	background-color:#4e71c2;
+	padding:8px;
+	text-align:center;
+	border-radius: 10px;
+	font-family:Andika;
+}
+footer a{
+	color : white;
+	padding:8px;
+	font-size:15px;
+	text-align:center;
+}
+footer a:hover{
+	padding:2px;
+	color : white;
+	background-color:#b4e2e5;
+}
+nav{
+	grid-area: na;
+	color :white;
+	border-radius: 10px;
+	padding:17px;
+	background-color:#4e71c2;
+	text-align:center;
+	font-size:15px;
+	font-family:Andika;
+}
+ol{
+	font-family:Arial;
+	font-weight:bold;
+	font-size:14px;
+}
+
+section p{
+	font-family:Arial;
+	font-weight:bold;
+	font-size:14px;
+}
+
+section{
+	grid-area: sec;
+	background-color:#b4e2e5;
+	font-family:Andika;
+}
+header{
+	grid-area: hd;
+	color :black;
+	background-color:#4e71c2;
+	text-align:center;
+	font-family:Andika;
+}
+nav a{
+color :white;
+	padding:15px;
+	margin-left:10px;
+	margin-right:10px;
+}
+nav a:hover { 
+color:white;
+padding:15px;
+font-size:15px;
+background-color:#b4e2e5;
+}
+
